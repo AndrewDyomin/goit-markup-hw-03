@@ -1,0 +1,241 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--navy-blue);
+}
+
+:root {
+    --navy-blue: #2E2F42;
+    --iris: #4D5AE5;
+    --slate: #434455;
+    --white: #FFFFFF;
+    --ocean: #404BBF;
+    --cloud: #F4F4FD;
+    --cornflower: #E7E9FC;
+}
+
+/*----------------header------------------*/
+
+.header {
+
+}
+
+.header-menu {
+
+}
+
+.menu-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--iris);
+}
+
+.header-studio {
+    color: var(--navy-blue);
+
+}
+
+.header-list {
+    list-style: none;
+}
+
+.header-item {}
+
+.header-item-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--navy-blue);
+}
+
+.header-item-link:hover,
+.header-item-link:focus {
+    color: var(--ocean);
+}
+
+.header-contacts {}
+
+.header-contacts-list {
+    list-style: none;
+}
+
+.header-contacts-item {}
+
+.header-contacts-link {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+    text-decoration: none;
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+    color: var(--ocean);
+}
+
+/*----------------header------------------*/
+
+/*------------------main------------------*/
+
+.hero-section {
+    background-color: var(--navy-blue);
+}
+
+.hero-section-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--white);
+}
+
+.hero-section-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    background-color: var(--iris);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.hero-section-btn:hover,
+.hero-section-btn:focus {
+    background-color: var(--ocean);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.advantages-list {}
+
+.advantages-item {
+    list-style: none;
+}
+
+.advantages-item-title {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+
+.advantages-item-description {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+}
+
+.title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navy-blue);
+}
+
+.product-list {}
+
+.product-item {
+    list-style: none;
+}
+
+.team-section {
+    background-color: var(--cloud);
+}
+
+.team-list {}
+
+.team-item {
+    list-style: none;
+}
+
+.name,
+.portfolio-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+
+.team-role,
+.portfolio-list-description {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+}
+
+.portfolio-section {}
+
+.portfolio-btn-list {
+    list-style: none;
+}
+
+.portfolio-btn-item {
+
+}
+
+.portfolio-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--iris);
+    background-color: var(--cloud);
+    border: 1px solid var(--cornflower);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background-color: var(--ocean);
+    color: var(--white);
+}
+
+.portfolio-item {
+    list-style: none;
+}
+
+/*------------------main------------------*/
+
+/*-----------------footer-----------------*/
+
+.footer {
+    background-color: var(--navy-blue);
+}
+
+.footer-studio {
+    color: var(--cloud);
+}
+
+.footer-description {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--cornflower);
+}
+/*-----------------footer-----------------*/
