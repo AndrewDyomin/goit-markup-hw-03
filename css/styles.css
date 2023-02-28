@@ -11,6 +11,7 @@ body {
     --ocean: #404BBF;
     --cloud: #F4F4FD;
     --cornflower: #E7E9FC;
+    --shadow: #2E2F4229;
     --card-set-gap: 24px;
 }
 
@@ -34,7 +35,6 @@ h1, h1, h3, h4, h5, h6, p, ul {
 
 img {
     display: block;
-    max-width: 100%;
     height: auto;
 }
 
@@ -94,20 +94,20 @@ img {
     color: var(--ocean);
 }
 
-.header-contacts {}
+.header-contacts {
+    margin-left: auto;
+}
 
 .header-contacts-list {
     display: flex;
     list-style: none;
     padding-left: 0;
-    margin-left: 332px;
     gap: 40px;
 }
 
 .header-contacts-item {}
 
 .header-contacts-link {
-    display: block;
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
@@ -185,8 +185,8 @@ img {
     list-style: none;
 
     display: flex;
-    gap: 8px;
-    /*flex-wrap: wrap;
+    /*gap: 24px;
+    flex-wrap: wrap;
     margin-left: calc(-1 * var(--card-set-gap));
     margin-top: calc(-1 * var(--card-set-gap));*/
 }
@@ -196,6 +196,10 @@ img {
     /*flex-basis: calc(100% / 4 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);*/
+}
+
+.advantages-item:nth-child(n + 2) {
+    margin-left: 24px;
 }
 
 .advantages-item-title {
@@ -214,6 +218,7 @@ img {
 }
 
 .product-container {
+    padding-top: 0;
     padding-bottom: 120px;
 }
 
@@ -236,16 +241,20 @@ img {
     list-style: none;
 
     display: flex;
-    gap: 24px;
-    /*flex-wrap: wrap;
+    /*gap: 24px;
+    flex-wrap: wrap;
     margin-left: calc(-1 * var(--card-set-gap));
-    margin-top: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));*/
 }
 
 .product-item {
-    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    /*flex-basis: calc(100% / 3 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);*/
+}
+
+.product-item:nth-child(n + 2) {
+    margin-left: 24px;
 }
 
 .team-section {
@@ -258,19 +267,20 @@ img {
     list-style: none;
 
     display: flex;
-    gap: 24px;
-    /*flex-wrap: wrap;
+    /*gap: 24px;
+    flex-wrap: wrap;
     margin-left: calc(-1 * var(--card-set-gap));
     margin-top: calc(-1 * var(--card-set-gap));*/
 }
 
 .team-item {
-    background-color: #FFFFFF;
+    background-color: var(--white);
     border-radius: 0px 0px 4px 4px;
-    /*flex-basis: calc(100% / 4 - var(--card-set-gap));
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);*/
-    box-shadow: 0px 1px 1px 0px #2E2F4229;
+    box-shadow: 0px 1px 1px 0px var(--shadow);
+}
+
+.team-item:nth-child(n + 2) {
+    margin-left: 24px;
 }
 
 .name,
@@ -280,7 +290,6 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
-    margin-top: 32px;
     text-align: center;
 }
 
@@ -290,9 +299,12 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
-    margin-top: 8px;
-    margin-bottom: 32px;
     text-align: center;
+    margin-top: 8px;
+}
+
+.card-block {
+    padding: 32px 16px;
 }
 
 .portfolio-btn-list {
@@ -340,8 +352,7 @@ img {
 }
 
 .portfolio-item {
-    box-sizing: border-box;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     flex-basis: calc(100% / 3 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: calc(var(--card-set-gap) * 2);
@@ -357,20 +368,17 @@ img {
 }
 
 .portfolio-list-title {
-    margin-top: 32px;
-    margin-bottom: 0;
-    padding-left: 16px;
+    margin: 0;
     text-align: start;
 }
 
 .portfolio-list-description {
     margin-top: 8px;
-    padding-left: 16px;
     text-align: start;
 }
 
 .portfolio-list-block {
-    display: block;
+    padding: 32px 16px;
     border-left: 1px solid var(--cornflower);
     border-right: 1px solid var(--cornflower);
     border-bottom: 1px solid var(--cornflower);
